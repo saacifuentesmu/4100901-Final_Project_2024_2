@@ -1,4 +1,4 @@
-C:/Users/ismae/Desktop/Semestre_actual/Estructuras_Computacionales/4100901-Final_Project_2024_2/build/Debug/CMakeFiles/4100901-Final_Project_2024_2.dir
+C:/Users/ismae/Desktop/Semestre_actual/Estructuras_Computacionales/4100901-Final_Project_2024_2/build/Debug/CMakeFiles/Project.dir
 C:/Users/ismae/Desktop/Semestre_actual/Estructuras_Computacionales/4100901-Final_Project_2024_2/build/Debug/CMakeFiles/edit_cache.dir
 C:/Users/ismae/Desktop/Semestre_actual/Estructuras_Computacionales/4100901-Final_Project_2024_2/build/Debug/CMakeFiles/rebuild_cache.dir
 C:/Users/ismae/Desktop/Semestre_actual/Estructuras_Computacionales/4100901-Final_Project_2024_2/build/Debug/cmake/stm32cubemx/CMakeFiles/edit_cache.dir

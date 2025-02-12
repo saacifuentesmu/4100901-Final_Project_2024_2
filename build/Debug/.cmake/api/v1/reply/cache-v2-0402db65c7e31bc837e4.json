@@ -915,7 +915,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "4100901-Final_Project_2024_2"
+			"value" : "Project"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1212,6 +1212,42 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
+		},
+		{
+			"name" : "Project_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/ismae/Desktop/Semestre_actual/Estructuras_Computacionales/4100901-Final_Project_2024_2/build/Debug"
+		},
+		{
+			"name" : "Project_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Project_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/ismae/Desktop/Semestre_actual/Estructuras_Computacionales/4100901-Final_Project_2024_2"
 		},
 		{
 			"name" : "stm32cubemx_BINARY_DIR",
