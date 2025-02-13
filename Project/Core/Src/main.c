@@ -58,6 +58,7 @@ static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN 0 */
 uint32_t key_pressed_tick = 0;
 uint16_t column_pressed = 0;
+uint8_t byte_received;
 
 uint32_t debounce_tick = 0;
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
@@ -68,6 +69,13 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
   debounce_tick = HAL_GetTick();
   key_pressed_tick = HAL_GetTick();
   column_pressed = GPIO_Pin;
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+  HAL_UART_Receive_IT(&huart2, &byte_received, 1);
+  HAL_UART_Transmit(&huart2, &byte_received, 1, 10);
+
 }
 /* USER CODE END 0 */
 
@@ -108,6 +116,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   keypad_init();
+  HAL_UART_Receive_IT(&huart2, &byte_received, 1);
   HAL_UART_Transmit(&huart2, (uint8_t *)"Hello World\n", 12, 100);
   while (1) {
     if (column_pressed != 0 && (key_pressed_tick + 5) < HAL_GetTick() ) {
